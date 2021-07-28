@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HistoryDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_blue_curd_shap" />
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageButton
+
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onBack"
+                android:src="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="Quiz Detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Hello  karna pitroda," />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtQuestionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: karna pitroda" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOptionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="ans: ldfksdjffj" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtQuestionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: karna pitroda" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOptionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="ans: ldfksdjffj" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtStart"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_above="@+id/txtHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/rounded_blue_btn"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="FINISH"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtHistory"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_blue_btn"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="HISTORY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/imgShap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:padding="@dimen/_50sdp"
+        android:src="@drawable/icon_exams" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgShap"
+        android:background="@drawable/ic_blue_curd_shap"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ipName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:hint="Enter name"
+            app:errorEnabled="false"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#9ba8b0">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtName"
+                style="@style/EditTextSignupThemeDefult"
+                android:layout_marginBottom="@dimen/_minus5sdp"
+                android:inputType="textAutoComplete"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtStart"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/ipName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/rounded_btn"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Start Quiz"
+            android:textColor="#7C72FF"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.QuestionTwoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_blue_curd_shap" />
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageButton
+
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="onBack"
+                android:src="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="Qetion 2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvOptions"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_blue_btn"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Next"
+        android:onClick="onNext"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+</LinearLayout>
